@@ -16,10 +16,42 @@ $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 $(call inherit-product, device/google/zuma/lineage_common.mk)
 $(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-lineage.mk)
 
+# setup dalvik vm configs.
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 8 Pro
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
+
+# Addons
+TARGET_HAS_UDFPS := true
+TARGET_PREBUILT_BCR := true
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+
+# Gms 
+WITH_GMS := true
+
+# Whether to ship prebuilt Google Dialer and Messages
+TARGET_INCLUDE_GOOGLE_DIALER := true
+
+# Ship Google Camera
+TARGET_PREBUILT_GOOGLE_CAMERA := true
+
+# Ship Pixel Launcher
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+
+# Ship LawnChair 
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+
+#Ship Pixel Overlays
+WITH_PIXEL_OVERLAYS := true
+
+RISING_MAINTAINER=EliteDarkKaiser
+RISING_VERSION := 7.1
+TARGET_FACE_UNLOCK_SUPPORTED := false
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2992

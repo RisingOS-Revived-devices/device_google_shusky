@@ -19,8 +19,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Iwlan
 
+# PixelParts
+-include packages/apps/PixelParts/device.mk
+
+# Ship Google Face Unlock ( GFU )Add commentMore actions
+TARGET_SUPPORTS_GFU := true
+
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
+
+# PixelSupport
+include device/google/gs-common/pixelsupport/pixelsupport.mk
 
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
@@ -44,3 +53,6 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
+
+#PRODUCT_HOST_PACKAGES += \
+       libartpalette
