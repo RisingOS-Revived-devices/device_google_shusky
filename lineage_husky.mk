@@ -34,17 +34,8 @@ TARGET_ENABLE_BLUR := true
 # Gms 
 WITH_GMS := true
 
-# Whether to ship prebuilt Google Dialer and Messages
-TARGET_INCLUDE_GOOGLE_DIALER := true
-
 # Ship Google Camera
 TARGET_PREBUILT_GOOGLE_CAMERA := true
-
-# Ship Pixel Launcher
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
-
-# Ship LawnChair 
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
 
 #Ship Pixel Overlays
 WITH_PIXEL_OVERLAYS := false
