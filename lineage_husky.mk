@@ -31,11 +31,8 @@ TARGET_PREBUILT_BCR := true
 # disable/enable blur support, default is false
 TARGET_ENABLE_BLUR := true
 
-# Gms 
+# Gms
 WITH_GMS := true
-
-# Ship Google Camera
-TARGET_PREBUILT_GOOGLE_CAMERA := true
 
 #Ship Pixel Overlays
 WITH_PIXEL_OVERLAYS := false

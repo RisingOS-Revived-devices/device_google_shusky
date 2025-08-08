@@ -22,7 +22,10 @@ PRODUCT_PACKAGES += \
 # PixelParts
 -include packages/apps/PixelParts/device.mk
 
-# Ship Google Face Unlock ( GFU )Add commentMore actions
+# Google Camera Prebuilt
+-include vendor/google/camera/camera.mk
+
+# Ship Google Face Unlock ( GFU )
 TARGET_SUPPORTS_GFU := true
 
 # PowerShare
