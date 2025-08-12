@@ -24,6 +24,8 @@ PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 # Addons
 TARGET_HAS_UDFPS := true
 TARGET_PREBUILT_BCR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+RELEASE_PIXEL_2025_ENABLED := true
 
 # disable/enable blur support, default is false
 TARGET_ENABLE_BLUR := true

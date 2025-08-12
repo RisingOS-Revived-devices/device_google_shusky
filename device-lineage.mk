@@ -22,9 +22,6 @@ PRODUCT_PACKAGES += \
 # PixelParts
 -include packages/apps/PixelParts/device.mk
 
-# Google Camera Prebuilt
--include vendor/google/camera/camera.mk
-
 # Ship Google Face Unlock ( GFU )
 TARGET_SUPPORTS_GFU := true
 
