@@ -36,8 +36,14 @@ WITH_GMS := true
 #Ship Pixel Overlays
 WITH_PIXEL_OVERLAYS := true
 
+# Ship Pixel Launcher
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
+# Lawnchair Prebuilt
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+
 RISING_MAINTAINER=EliteDarkKaiser
-RISING_VERSION := 8.0
+RISING_VERSION := 8.1
 TARGET_FACE_UNLOCK_SUPPORTED := false
 
 # Boot animation
