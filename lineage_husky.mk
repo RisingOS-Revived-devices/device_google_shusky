@@ -37,7 +37,7 @@ TARGET_ENABLE_BLUR := true
 WITH_GMS := true
 
 #Ship Pixel Overlays
-WITH_PIXEL_OVERLAYS := false
+WITH_PIXEL_OVERLAYS := true
 
 # Ship Pixel Launcher
 TARGET_DEFAULT_PIXEL_LAUNCHER := true
