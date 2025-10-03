@@ -34,6 +34,8 @@ include device/google/gs-common/pixelsupport/pixelsupport.mk
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 
+RISING_MAINTAINER=Jrcable2
+
 # Build necessary packages for vendor
 
 # Dumpstate
