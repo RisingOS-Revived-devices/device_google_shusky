@@ -17,7 +17,7 @@ $(call inherit-product, device/google/zuma/lineage_common.mk)
 $(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-lineage.mk)
 
 # setup dalvik vm configs.
-$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-12288-dalvik-heap.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
