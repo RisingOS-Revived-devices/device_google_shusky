@@ -24,31 +24,6 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 8 Pro
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 
-# Addons
-TARGET_HAS_UDFPS := true
-TARGET_PREBUILT_BCR := true
-TARGET_SUPPORTS_QUICK_TAP := true
-RELEASE_PIXEL_2025_ENABLED := true
-
-# disable/enable blur support, default is false
-TARGET_ENABLE_BLUR := true
-
-# Gms
-WITH_GMS := true
-
-#Ship Pixel Overlays
-WITH_PIXEL_OVERLAYS := true
-
-# Ship Pixel Launcher
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
-
-# Lawnchair Prebuilt
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-
-RISING_MAINTAINER=EliteDarkKaiser
-RISING_VERSION := 8.1
-TARGET_FACE_UNLOCK_SUPPORTED := false
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2992
 TARGET_SCREEN_WIDTH := 1344

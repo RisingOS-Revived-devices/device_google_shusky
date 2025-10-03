@@ -34,7 +34,30 @@ include device/google/gs-common/pixelsupport/pixelsupport.mk
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 
+# Addons
+TARGET_HAS_UDFPS := true
+TARGET_PREBUILT_BCR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+RELEASE_PIXEL_2025_ENABLED := true
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+
+# Gms
+WITH_GMS := true
+
+#Ship Pixel Overlays
+WITH_PIXEL_OVERLAYS := true
+
+# Ship Pixel Launcher
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+
+# Lawnchair Prebuilt
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+
 RISING_MAINTAINER=Jrcable2
+RISING_VERSION := 8.1
+TARGET_FACE_UNLOCK_SUPPORTED := false
 
 # Build necessary packages for vendor
 
